@@ -1,0 +1,7 @@
+.p-sidebar-right .p-sidebar {
+    width: 30rem!important;
+}
+.p-sidebar-header{
+    border-bottom: 1px solid #e4e4e4;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.03), 0px 0px 2px rgba(0, 0, 0, 0.06), 0px 2px 6px rgba(0, 0, 0, 0.12) !important;
+}

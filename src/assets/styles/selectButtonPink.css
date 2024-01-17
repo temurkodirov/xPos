@@ -1,0 +1,7 @@
+.p-selectbutton .p-button.p-highlight {
+    background: #673AB7!important;
+    color: white;
+}
+.p-selectbutton .p-button.p-highlight:hover{
+    background: #673AB7!important;
+}
