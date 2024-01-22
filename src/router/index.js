@@ -24,6 +24,11 @@ const router = createRouter({
                   component:() => import('@/views/xCreateOrder.vue')
                 },
                 {
+                    path:'/xDebtors',
+                    name:'xDebtors',
+                    component:() => import('@/views/xDebtors.vue')
+                },
+                {
                     path: '/uikit/formlayout',
                     name: 'formlayout',
                     component: () => import('@/views/uikit/FormLayout.vue')

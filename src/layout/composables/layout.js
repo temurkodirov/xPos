@@ -64,5 +64,5 @@ export function useLayout() {
     const isBasketActive = computed(() => layoutState.basketMenuActive || layoutState.staticBasketMobileActive)
     const isDarkTheme = computed(() => layoutConfig.darkTheme);
 
-    return { layoutConfig: toRefs(layoutConfig), layoutState: toRefs(layoutState), changeThemeSettings, setScale, onMenuToggle, isSidebarActive, isBasketActive, isDarkTheme, setActiveMenuItem };
+    return { layoutConfig: toRefs(layoutConfig), layoutState: toRefs(layoutState), changeThemeSettings, setScale, onMenuToggle,basketMenuToggle, isSidebarActive, isBasketActive, isDarkTheme, setActiveMenuItem };
 }

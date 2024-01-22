@@ -41,7 +41,7 @@ export default {
 <template>
 
   <div class="grid p-fluid">
-    <div class="col-12 md:col-6">
+    <div class="col-12">
 
       <div class="card">
         <form action="#">
@@ -83,53 +83,8 @@ export default {
         </form>
         <mapLeaflet></mapLeaflet>
       </div>
-
     </div>
-
-    <div class="col-12 md:col-6">
-      <div class="card">
-        <ul>
-          <li class="each-product" v-for="(product, index) in allProducts" :key="index">
-            <div class="custom  align-items-center justify-content-end">
-              <button @click="removeProduct(index)" class="x-btn-product" style="color:red;"><i class="pi pi-times"></i>
-              </button>
-            </div>
-            <div class="custom">
-              <div class="font-bold">
-                {{ product.name }}
-              </div>
-              <div>
-                <input class="priceInput" type="number" v-model="product.price">
-              </div>
-            </div>
-            <div>
-              {{ product.description }}
-            </div>
-            <div class="custom align-items-center my-2">
-              <div class="xProductQuantityCount align-items-center ">
-                <button @click="product.quantity = product.quantity - 1" class="xProductQuantityCountBtn">
-                  <svg xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 448 512">
-                    <path
-                        d="M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z"/>
-                  </svg>
-                </button>
-                <input min="1" v-model="product.quantity" type="number" class="xProductQuantityCountInput">
-                <button @click="product.quantity = product.quantity + 1" class="xProductQuantityCountBtn">
-                  <svg xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 448 512">
-                    <path
-                        d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"/>
-                  </svg>
-                </button>
-              </div>
-              <div class="font-bold ">
-                {{ product.totalPrice = product.quantity * product.price }}
-              </div>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
+   </div>
 </template>
 
 <style scoped>

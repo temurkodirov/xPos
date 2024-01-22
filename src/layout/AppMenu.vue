@@ -16,7 +16,9 @@ const model = ref([
        items: [
          {label: 'sement', icon: 'pi pi-align-justify', to:'/xProducts'}
        ]},
-      {label: 'Buyurtma yaratish', icon: 'pi pi-pencil', to: '/xCreateOrder'}]
+      {label: 'Buyurtma yaratish', icon: 'pi pi-pencil', to: '/xCreateOrder'},
+      {label: 'Qarzdorlar', icon: 'pi pi-pencil', to:'/xDebtors'}
+    ]
   },
   {
     label: 'UI Components',
